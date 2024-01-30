@@ -17,11 +17,23 @@ int main()
     }
 
     int count = 0;
-    for (i = 0; i < size; i++)
+    bool isDuplicate;
+
+    for (int i = 0; i < size; i++)
     {
-        if(myArray[i] == myArray[i+1])
+        if (isDuplicate)
         {
             count++;
+        }
+        isDuplicate = false;
+        for (int j = i + 1; j < size; j++)
+        {
+            if (myArray[i] == myArray[j])
+            {
+                isDuplicate = true;
+                myArray[j] = myArray[j + 1];
+                size--;
+            }
         }
     }
 
