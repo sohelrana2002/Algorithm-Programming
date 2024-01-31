@@ -28,7 +28,7 @@ int main()
         myArray[j+1] = temp;
     }
 
-    cout << "Inseration sort ascending order: ";
+    cout << "Inseration sort descending order: ";
     for(i = 0; i < size; i++){
         cout << myArray[i] << " ";
     }
