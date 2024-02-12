@@ -16,7 +16,6 @@ int main()
     int myArray1[row][col];
     int myArray2[row][col];
     int myArray3[row][col];
-    int myArray4[row][col];
 
     for(i = 0; i < row; i++){
         cout << "Enter 1st Matrix [A] and [B]: ";
