@@ -1,0 +1,2 @@
+
+            capitalArray[i] = false;
