@@ -1,4 +1,4 @@
-// -----Reverse Case----- 
+// -----Reverse case with proper index----- 
 #include<iostream>
 using namespace std;
 
