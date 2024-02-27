@@ -1,4 +1,5 @@
-// -----Reverse case with proper index----- 
+// =====Input a string then reverse the string but make sure the character case are correct . Ex: “BanglaDesh” ========
+
 #include<iostream>
 using namespace std;
 
