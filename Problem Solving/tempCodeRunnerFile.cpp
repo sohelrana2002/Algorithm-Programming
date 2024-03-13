@@ -1,2 +1,0 @@
-
-        if(myArray[i] > max){

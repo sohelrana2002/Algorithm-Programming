@@ -2,22 +2,22 @@
 #include <iostream>
 using namespace std;
 
-void merge(int arr[], int p, int q, int r) {
+void merge(int arr[], int ll, int mm, int rr) {
   
-  int n1 = q - p + 1;
-  int n2 = r - q;
+  int n1 = mm - ll + 1;
+  int n2 = rr - mm;
 
   int L[n1], M[n2];
 
   for (int i = 0; i < n1; i++)
-    L[i] = arr[p + i];
+    L[i] = arr[ll + i];
   for (int j = 0; j < n2; j++)
-    M[j] = arr[q + 1 + j];
+    M[j] = arr[mm + 1 + j];
 
   int i, j, k;
   i = 0;
   j = 0;
-  k = p;
+  k = ll;
 
   while (i < n1 && j < n2) {
     if (L[i] <= M[j]) {
