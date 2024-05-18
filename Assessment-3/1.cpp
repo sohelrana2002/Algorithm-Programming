@@ -2,7 +2,7 @@
 using namespace std;
 
 void knapsack(int n, float weight[], float profit[], float capacity) {
-   float x[20], tp = 0;
+   float x[n], tp = 0;
    int i, j, u;
    u = capacity;
  
@@ -18,37 +18,35 @@ void knapsack(int n, float weight[], float profit[], float capacity) {
          u = u - weight[i];
       }
    }
- 
-   if (i < n)
-      x[i] = u / weight[i];
+
+   if (i < n) x[i] = u / weight[i];
  
    tp = tp + (x[i] * profit[i]);
  
-   cout << "unit per taken: ";
-   for (i = 0; i < n; i++)
-      cout << x[i] << " ";
- 
+   cout << "Unit per taken: " << endl;
+   for (i = 0; i < n; i++){
+      cout << "Object no " << (i+1) << " is: " << (x[i] * weight[i]) << " kg" <<endl;
+   }
    cout << "\nMax profit: " << tp ;
  
 }
  
 int main() {
-   float weight[20], profit[20], capacity;
    int num, i, j;
-   float ratio[20], temp;
- 
-   cout << "object: ";
+   cout << "Total No. of objects: ";
    cin >> num;
+   float weight[num], profit[num], capacity;
+   float ratio[num], temp;
  
-   cout << "Weight and profits: ";
+   cout << "Enter Weight and profits for each object: " <<endl;
    for (i = 0; i < num; i++) {
-      cout << "weight: ";
-      cin >> weight[i];
-      cout << "profit: ";
+      cout << (i+1) << " No. object Profit is: ";
       cin >> profit[i];
+      cout << (i+1) << " No. object Weight is: ";
+      cin >> weight[i];
    }
  
-   cout << "Enter the capacityacity: ";
+   cout << "Enter total capacity: ";
    cin >> capacity;
  
    for (i = 0; i < num; i++) {
