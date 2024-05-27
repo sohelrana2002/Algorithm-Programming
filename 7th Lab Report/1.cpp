@@ -1,3 +1,4 @@
+// =====rod cutting algorithm=======
 #include <bits/stdc++.h>
 using namespace std;
 int getMaxProfit(int length[], int price[], int n, int L) {
