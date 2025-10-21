@@ -16,3 +16,10 @@ The main goal is to **practice, understand, and implement core algorithm concept
 - Divide and Conquer
 - Greedy Techniques
 - And many other algorithmic problem-solving approaches
+
+---
+
+**Explanation:**
+- Each **Lab Report** folder includes C++ codes related to algorithm lab experiments.  
+- **Problem Solving** folder contains additional algorithm problems solved for practice.  
+- **Assessment folders** include submitted assignments or tests. 
